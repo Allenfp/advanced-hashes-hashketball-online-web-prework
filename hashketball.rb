@@ -113,4 +113,43 @@ def game_hash
       }
     }
   }
-end 
+end
+
+
+def num_points_scored(name)
+
+  return_string = ""
+
+  game_hash.each do |team|
+    team.each do |player|
+        if team.keys.include? player
+          return game_hash[team][player][:points]
+    end
+  end
+
+
+end
+
+def shoe_size
+
+end
+
+def team_colors
+
+end
+
+def team_names
+
+end
+
+def player_numbers
+
+end
+
+def player_stats
+
+end
+
+def big_shoe_rebounds
+
+end
