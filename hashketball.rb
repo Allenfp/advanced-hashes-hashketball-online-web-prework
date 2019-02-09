@@ -150,16 +150,22 @@ end
 def team_names
   game_hash.collect do |team, data|
     data[:team_name]
-
-
   end
 end
 
 def player_numbers
-
+  game_hash.collect do |team, data|
+    data[:team_name]
+  end
 end
 
-def player_stats
+def player_stats(name)
+  game_hash.collect do |team, data|
+    data[:players].each do |player, stats|
+      stats
+
+    end
+  end
 
 end
 
