@@ -166,10 +166,11 @@ def player_numbers(team_name)
 end
 
 def player_stats(name)
-  game_hash.collect do |team, data|
+  game_hash.each do |team, data|
     data[:players].each do |player, stats|
-      stats
-
+      if player = name
+        return stats
+      end
     end
   end
 end
