@@ -190,7 +190,7 @@ def big_shoe_rebounds
 
   game_hash.each do |team, data|
     data[:players].each do |player, stats|
-      if player == [player_string]
+      if player == player_string
         return stats[:rebounds]
       end
     end
