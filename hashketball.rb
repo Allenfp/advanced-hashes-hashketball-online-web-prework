@@ -122,7 +122,7 @@ def num_points_scored(name)
 
   game_hash.each do |team|
     team.each do |player|
-        if team.keys.include? player
+        if player.keys.include? player
           return game_hash[team][player][:points]
         end
     end
