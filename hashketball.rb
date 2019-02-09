@@ -122,7 +122,7 @@ def num_points_scored(name)
 puts "Begin"
   game_hash.each do |team|
     team[:players].each do |player|
-        if player.keys.include? player
+        if player.keys.include? name
           puts player
           return game_hash[team][:players][player][:points]
         end
