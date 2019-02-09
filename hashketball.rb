@@ -118,15 +118,13 @@ end
 
 def num_points_scored(name)
 
-  return_string = ""
-puts "Begin"
-  game_hash.each do |team|
-    team[:players].each do |player|
-        if player.keys.include? name
-          puts player
-          return game_hash[team][:players][player][:points]
-        end
+  game_hash.each do |team, data|
+    data[:players].each do |player, stats|
+      if player_name == player
+        return stats[:points]
+      end
     end
+  end
   end
 
 num_points_scored("Jeff Adrien")
