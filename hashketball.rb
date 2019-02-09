@@ -151,7 +151,7 @@ def team_names
   game_hash.collect do |team, data|
     data[:team_name]
 
-    end
+
   end
 end
 
