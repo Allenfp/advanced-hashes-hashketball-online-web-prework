@@ -161,6 +161,7 @@ def player_numbers(team_name)
     end
   end
 end
+end
 
 def player_stats(name)
   game_hash.collect do |team, data|
@@ -169,7 +170,6 @@ def player_stats(name)
 
     end
   end
-
 end
 
 def big_shoe_rebounds
