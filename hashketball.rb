@@ -187,5 +187,12 @@ def big_shoe_rebounds
       end
     end
   end
-  player_string
+
+  game_hash.each do |team, data|
+    data[:players].each do |player, stats|
+      if player == [player_string]
+        return stats[rebounds]
+      end
+    end
+  end
 end
